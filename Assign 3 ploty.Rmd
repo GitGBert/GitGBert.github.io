@@ -1,0 +1,27 @@
+---
+title: "Data Products Assignment 3"
+author: "George Bertini"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = FALSE)
+
+setwd("~/Learning Books/Data Science/Coursera DataScience/C9 Data Products/Quizs Assign")
+
+library(ggplot2)
+library(plotly)
+
+```
+
+
+## Slide with interactive Plotly Output
+
+Date: May 30. 2017
+```{r cars, echo = FALSE}
+
+plot_ly(data=mtcars, x = ~wt, y = ~mpg, type = 'scatter', mode='markers', color = ~factor(cyl))
+```
+
+
